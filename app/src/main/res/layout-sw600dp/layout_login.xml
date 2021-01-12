@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    style="@style/loginCard"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor"
+    android:elevation="5dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="8dp">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:indeterminateTint="@color/colorAccent"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:shadowColor="@color/primaryTextColor"
+            android:text="LOGIN" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_email"
+                style="@style/modifiedEditText"
+                android:hint="Email address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleTint="@color/grey"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_password"
+                style="@style/modifiedEditText"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txt_forgot_password_login"
+            style="@style/viewParent"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="LOGIN" />
+
+        <TextView
+            android:id="@+id/txt_to_signUp"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:padding="12dp"
+            android:text="Don't have account? Sign Up here"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

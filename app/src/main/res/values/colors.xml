@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    default colors-->
+    <color name="colorPrimary">#f5ffff</color>
+    <color name="colorPrimaryDark">#cfd8dc</color>
+    <color name="colorAccent">#039BE6</color>
+    <color name="textColor">#414141</color>
+    <color name="iconsborderColor">#FF2E7979</color>
+    <color name="c_gray0">#90A4AE</color>
+    <color name="login_form_details_light">#1affffff</color>
+    <!--    welcome layout dots colors-->
+    <color name="dot_inactive_screen1">#808080</color>
+    <color name="dot_inactive_screen2">#808080</color>
+    <color name="dot_inactive_screen3">#808080</color>
+    <!-- dots active colors -->
+    <color name="dot_active_screen1">#f7f7fc</color>
+    <color name="dot_active_screen2">#f7f7fc</color>
+    <color name="dot_active_screen3">#f7f7fc</color>
+    <array name="array_dot_active">
+        <item>@color/dot_active_screen1</item>
+        <item>@color/dot_active_screen2</item>
+        <item>@color/dot_active_screen3</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dot_inactive_screen1</item>
+        <item>@color/dot_inactive_screen2</item>
+        <item>@color/dot_inactive_screen3</item>
+    </array>
+    <color name="transparent">#00000000</color>
+
+    <color name="dark_blue">#23283a</color>
+    <color name="blue">#1875d1</color>
+    <color name="edittextcolor">#80deea</color>
+    <color name="white">#fff</color>
+    <color name="startblue">#09c6df</color>
+    <color name="grey">#858585</color>
+    <color name="black">#000000</color>
+    <color name="off_white">#F8F8F8</color>
+    <color name="touch_grey">#eeeeee</color>
+
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#00a5ff</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+</resources>

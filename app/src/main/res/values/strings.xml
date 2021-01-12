@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TheNetwork</string>
+    <string name="logout_text">Logout</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="main_notification_channel_name">TheNetworkNotificationChannel</string>
+    <string name="write_a_message">Write a message...</string>
+    <string name="search">Search...</string>
+    <string name="for_search">I-Find</string>
+
+    <string name="follow_error_message">An unexpected error occurred, please check your connection or try again after sometime.</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="feedback_text">I am always for suggestions,bug reports and your views app related and I will respond via email to your feedback. You may also send feedback to <u>mkhungela.l@gmail.com</u></string>
+    <string name="title_settings_dialog">Please Choose</string>
+    <string name="create_post">Create A Post</string>
+    <!--    <string name="default_web_client_id">default_web_client</string>-->
+
+</resources>
+
