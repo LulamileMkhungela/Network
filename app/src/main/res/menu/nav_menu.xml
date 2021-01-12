@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+        <item
+            android:id="@+id/action_find"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Find people" />
+        <item
+            android:id="@+id/action_following"
+            android:icon="@drawable/ic_people_outline_black_24dp"
+            android:title="Following" />
+        <item
+            android:id="@+id/action_followers"
+            android:icon="@drawable/add_user"
+            android:title="Followers" />
+
+        <item
+            android:id="@+id/action_faqs"
+            android:icon="@drawable/ic_help_outline_black_24dp"
+            android:title="FAQS" />
+        <item
+            android:id="@+id/action_settings"
+            android:icon="@drawable/settings_outline"
+            android:title="Settings" />
+        <item
+            android:id="@+id/action_feedback"
+            android:icon="@drawable/message_alert_outline"
+            android:title="Send FeedBack" />
+    </group>
+</menu>

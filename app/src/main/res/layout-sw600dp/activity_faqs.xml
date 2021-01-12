@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".FaqsActivity">
+
+        <TextView
+            android:id="@+id/article_subheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="What does the hints button used for?"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+        <TextView
+            android:id="@+id/article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_subheading"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/card_view"
+            android:lineSpacingExtra="8dp"
+            android:padding="8dp"
+            android:text="It simple means you aware of the post and can provide valid evidence or proof for that post(Eg if someone posted a missing child by hinting means that you know where the child is or you once saw it in that perio" />
+
+        <TextView
+            android:id="@+id/article_subheading2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article"
+            android:padding="12dp"
+            android:text="How do I check my profile?"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+        <TextView
+            android:id="@+id/article2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_subheading2"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/card_view"
+            android:lineSpacingExtra="8dp"
+            android:padding="8dp"
+            android:text="Click on the to navigation with (three dots) on the right handside of your screen.Select profile." />
+
+        <TextView
+            android:id="@+id/article_subheading3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article2"
+            android:padding="12dp"
+            android:text="Do you get notifications If someone sent you a message or followed you??"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+        <TextView
+            android:id="@+id/article3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_subheading3"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/card_view"
+            android:lineSpacingExtra="8dp"
+            android:padding="8dp"
+            android:text="No for now,you are required to go to request/message tab to see if you got any notification from other user" />
+
+        <TextView
+            android:id="@+id/article_subheading4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article3"
+            android:padding="12dp"
+            android:text="Can I search my friends or anyone?"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+        <TextView
+            android:id="@+id/article4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_subheading4"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/card_view"
+            android:lineSpacingExtra="8dp"
+            android:padding="8dp"
+            android:text="Unfortunately you are not able to do so at the moment, but I am working on that and improving the App" />
+
+        <TextView
+            android:id="@+id/article_subheading5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article4"
+            android:padding="12dp"
+            android:text="There are unknown people following me, Is this App secured?"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+        <TextView
+            android:id="@+id/article5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_subheading5"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/card_view"
+            android:lineSpacingExtra="8dp"
+            android:padding="8dp"
+            android:text="You will randomly get follow request and followers request and even you, you are able to send follow request to others.The app is 100% secure and all messages are encrypted by Google Firebase" />
+
+        <TextView
+            android:id="@+id/article_subheading6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article5"
+            android:padding="12dp"
+            android:text="What is TheNetwork App?"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+        <TextView
+            android:id="@+id/article6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_subheading6"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/card_view"
+            android:lineSpacingExtra="8dp"
+            android:padding="8dp"
+            android:text="Its a platform to say,speak out of what happened to you, In case someone saw the incident can  assist you give you more information about that incident/refer you to someone " />
+
+        <TextView
+            android:id="@+id/article_subheading7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/article6"
+            android:background="@color/white"
+            android:padding="12dp"
+            android:text="Can I Make Friends And Follow Other People?"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/article_subheading7"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/card_view"
+            android:lineSpacingExtra="8dp"
+            android:padding="8dp"
+            android:text="Yes,you click the navigation drawer and select Find people then you will see the list of all users registered in the application" />
+
+    </RelativeLayout>
+</ScrollView>

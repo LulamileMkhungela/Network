@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/loginParent"
+    android:orientation="vertical">
+
+    <ScrollView style="@style/parent">
+
+        <RelativeLayout style="@style/parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_login_bk"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/headerText"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:text="I-Find" />
+
+                <include layout="@layout/layout_register" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_close_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:tint="@color/white"
+                android:elevation="18dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+

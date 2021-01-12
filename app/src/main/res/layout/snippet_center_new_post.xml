@@ -1,0 +1,187 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/new_post_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/select_image"
+                tools:ignore="ContentDescription" />
+
+            <!-- Blog Image section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/new_post_image"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/et_ui">
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="35dp"-->
+                <!--                    android:layout_height="35dp"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:src="@drawable/ic_gesture_gray_24dp" />-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/setup_skill"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:layout_marginStart="40dp"-->
+                <!--                    android:background="@null"-->
+                <!--                    android:hint="Skills"-->
+                <!--                    android:inputType="textNoSuggestions" />-->
+
+            </RelativeLayout>
+
+
+            <!-- title section -->
+            <RelativeLayout
+                android:id="@+id/relLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_post_image"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/et_ui">
+
+                <EditText
+                    android:id="@+id/new_post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/et_ui"
+                    android:focusable="true"
+                    android:gravity="start"
+                    android:hint="What happened?"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="3dp"
+                    android:padding="6dp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="6dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+
+                <TextView
+                    android:id="@+id/btn_missing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/new_post_title"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/hash_tag_write_post"
+                    android:padding="8dp"
+                    android:text="Missing" />
+
+                <TextView
+                    android:id="@+id/btn_abuse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/btn_missing"
+                    android:layout_alignBottom="@+id/btn_missing"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@+id/btn_missing"
+
+                    android:background="@drawable/hash_tag_write_post"
+                    android:padding="8dp"
+                    android:text="Abuse" />
+
+                <TextView
+                    android:id="@+id/btn_lost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/btn_abuse"
+                    android:layout_alignBottom="@+id/btn_abuse"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@+id/btn_abuse"
+                    android:background="@drawable/hash_tag_write_post"
+
+                    android:padding="8dp"
+                    android:text="Lost" />
+
+                <TextView
+                    android:id="@+id/btn_mistreat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/btn_lost"
+                    android:layout_alignBottom="@+id/btn_lost"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@+id/btn_lost"
+
+                    android:background="@drawable/hash_tag_write_post"
+                    android:padding="8dp"
+                    android:text="Mistreat" />
+
+                <TextView
+                    android:id="@+id/btn_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/btn_mistreat"
+                    android:layout_alignBottom="@+id/btn_mistreat"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@+id/btn_mistreat"
+                    android:background="@drawable/hash_tag_write_post"
+
+                    android:padding="8dp"
+                    android:text="Other" />
+
+            </RelativeLayout>
+
+
+            <!-- description section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/relLayout4"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/et_ui"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/new_post_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:fontFamily="@font/circular_std_book"
+                    android:gravity="top"
+                    android:hint="Add a description..."
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:maxLength="1000"
+                    android:maxLines="20"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    tools:ignore="Autofill" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</merge>

@@ -1,0 +1,153 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="20dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/setup_image"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/default_profile"
+                app:civ_border_color="#fff"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/changeProfilePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setup_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:text="Change Photo"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+
+            <!-- username section -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/changeProfilePhoto"
+                android:layout_margin="10dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="#d4e9fc"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_horizontal"
+                        android:text="Account Details"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-16dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/relLayout1"
+                            style="@style/parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/setup_name"
+                                style="@style/modifiedEditText"
+                                android:hint="Username"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/setup_skill"
+                                style="@style/modifiedEditText"
+                                android:hint="About you"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/aboutyou"
+                                style="@style/modifiedEditText"
+                                android:hint="Location"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/relLayout4"
+                            style="@style/parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/email"
+                                style="@style/modifiedEditText"
+                                android:hint="Email address"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/phoneNumber"
+                                style="@style/modifiedEditText"
+                                android:hint="Phone Number"
+                                android:inputType="textEmailAddress"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    </ScrollView>
+</merge>
